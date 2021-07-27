@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    position: relative;
+    min-height: 4vh;
+    display: flex;
+}
+.btn{
+    position: absolute;
+    padding: 5%;
+    min-width: 4vh;
+    min-height: 4vh;
+    right: 0;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.search{
+    padding: 1%;
+    outline: none;
+    border: none;
+    min-width: 25vh;
+    display: none;
+}
+
+.searchopen{
+    padding: 1%;
+    outline: none;
+    border: none;
+    min-width: 25vh;
+    display: block;
+}
+
+
