@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+@mixin perfectcentering($flexdirection,$justifycontent) {
+    margin: 0;
+    display: flex;
+    justify-content: $justifycontent;
+    align-items: center;
+    flex-direction: $flexdirection;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    @include perfectcentering(row,center)
+}
+
+.content {
+    @include perfectcentering(column,flex-start);
+    width: 50%;
+    font-size: 4vh;
+    color: rgba($color: #fff, $alpha: 1.0); 
+    transition: all 0.4s ease-in-out;
+    transition-delay: 0.3s; 
+}
+
+
+.left {
+    background-image: url(ps.jpg);
+    position: relative;
+
+}
+
+.left::before {
+    background-color: rgba(87, 84, 236, 0.7);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.right {
+    background-image: url(xbox.jpg);
+    position: relative;
+}
+
+.right::before {
+    background-color: rgba(43, 43, 43, 0.8);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+h2{
+    position: absolute;
+    margin-top: 25vh;
+    color: rgba($color: #fff, $alpha: 1.0);
+}
+
+button{
+    position:absolute;
+    margin-top: 43vh;
+    background-color: transparent;
+    color: white;
+    border:2px solid white;
+    padding: 2vh 9vh;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.5vh;
+    cursor: pointer;
+    &:hover{
+        font-size: 2vh;
+    }
+}
+
+#ps-btn:hover{
+    background-color: rgba(87, 84, 236, 1);
+    border:none;
+}
+
+#xbox-btn:hover{
+    background-color: rgba(28, 122, 28, 1);
+    border:none;
+}
+
+.active{
+    width: 150%;
+   
+}
+
+.passive{
+    width: 50%;
+    
+}
+
+
+
+
+
