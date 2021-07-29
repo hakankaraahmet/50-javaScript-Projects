@@ -5,7 +5,7 @@
     font-family: 'Prompt', sans-serif;
 }
 
-@mixin perfectcentering($flexdirection,$justifycontent) {
+@mixin perfectcentering($flexdirection, $justifycontent) {
     margin: 0;
     display: flex;
     justify-content: $justifycontent;
@@ -14,24 +14,29 @@
     height: 100vh;
     overflow: hidden;
 }
+@mixin parallax{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 body {
-    @include perfectcentering(row,center)
+    @include perfectcentering(row, center)
 }
 
 .content {
-    @include perfectcentering(column,flex-start);
+    @include perfectcentering(column, flex-start);
     width: 50%;
     font-size: 4vh;
-    color: rgba($color: #fff, $alpha: 1.0); 
+    color: rgba($color: #fff, $alpha: 1.0);
     transition: all 0.4s ease-in-out;
-    transition-delay: 0.3s; 
+    transition-delay: 0.3s;
 }
 
 
 .left {
     background-image: url(ps.jpg);
     position: relative;
+    @include parallax();
 
 }
 
@@ -41,11 +46,14 @@ body {
     height: 100%;
     position: absolute;
     width: 100%;
+    
 }
 
 .right {
     background-image: url(xbox.jpg);
     position: relative;
+    @include parallax();
+    
 }
 
 .right::before {
@@ -54,51 +62,48 @@ body {
     height: 100%;
     position: absolute;
     width: 100%;
+
 }
 
-h2{
+h2 {
     position: absolute;
     margin-top: 25vh;
     color: rgba($color: #fff, $alpha: 1.0);
 }
 
-button{
-    position:absolute;
+button {
+    position: absolute;
     margin-top: 43vh;
     background-color: transparent;
     color: white;
-    border:2px solid white;
+    border: 2px solid white;
     padding: 2vh 9vh;
     font-weight: bolder;
     text-transform: uppercase;
     font-size: 1.5vh;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         font-size: 2vh;
     }
 }
 
-#ps-btn:hover{
+#ps-btn:hover {
     background-color: rgba(87, 84, 236, 1);
-    border:none;
+    border: none;
 }
 
-#xbox-btn:hover{
+#xbox-btn:hover {
     background-color: rgba(28, 122, 28, 1);
-    border:none;
+    border: none;
 }
 
-.active{
+.active {
     width: 150%;
-   
+    @include parallax();
 }
 
-.passive{
+.passive {
     width: 50%;
-    
+    @include parallax();
 }
-
-
-
-
-
