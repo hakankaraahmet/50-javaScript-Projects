@@ -19,3 +19,5 @@ to people's works.I hope you enjoy it.
 6-scroll animation -- https://hakankaraahmet.github.io/50-javaScript-Projects/6-scrollanimation
 
 7-split landing page -- https://hakankaraahmet.github.io/50-javaScript-Projects/7-splitlandingpage
+
+8-form wave animation -- https://hakankaraahmet.github.io/50-javaScript-Projects/8-formwaveanimation
