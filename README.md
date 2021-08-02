@@ -21,3 +21,5 @@ to people's works.I hope you enjoy it.
 7-split landing page -- https://hakankaraahmet.github.io/50-javaScript-Projects/7-splitlandingpage
 
 8-form wave animation -- https://hakankaraahmet.github.io/50-javaScript-Projects/8-formwaveanimation
+
+9-sound board -- https://hakankaraahmet.github.io/50-javaScript-Projects/9-soundboard
