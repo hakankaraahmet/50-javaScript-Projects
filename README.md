@@ -23,3 +23,6 @@ to people's works.I hope you enjoy it.
 8-form wave animation -- https://hakankaraahmet.github.io/50-javaScript-Projects/8-formwaveanimation
 
 9-sound board -- https://hakankaraahmet.github.io/50-javaScript-Projects/9-soundboard
+
+10- dad jokes -- https://hakankaraahmet.github.io/50-javaScript-Projects/10-dadjokes
+
